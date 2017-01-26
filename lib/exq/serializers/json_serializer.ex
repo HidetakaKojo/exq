@@ -68,7 +68,7 @@ defmodule Exq.Serializers.JsonSerializer do
       pid: formatted_pid,
       host: process.host,
       job: process.job,
-      started_at: process.started_at], HashDict.new)
+      started_at: process.started_at], Map.new)
 
     encode!(deserialized)
   end
